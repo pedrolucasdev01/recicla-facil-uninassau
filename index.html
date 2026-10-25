@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recicla Fácil UNINASSAU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="marca">
+      <span class="logo">🌿</span>
+      <div>
+        <strong>Recicla Fácil</strong>
+        <small>UNINASSAU</small>
+      </div>
+    </div>
+    <p class="lema">Descarte certo hoje, um futuro melhor amanhã.</p>
+    <nav>
+      <button type="button" data-ir="inicio" class="ativo">Início</button>
+      <button type="button" data-ir="sobre">Sobre</button>
+      <button type="button" data-ir="dicas">Dicas</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- views do app -->
+    
+    <section id="tela-inicio" class="tela">
+      <div class="busca-area">
+        <h1>O que você quer descartar?</h1>
+        <form id="form-busca">
+          <input id="campo-busca" type="search" placeholder="Ex.: papel, plástico, pilha, celular..." autocomplete="off">
+          <button type="submit">🔍 Buscar</button>
+        </form>
+        <p id="msg" class="msg" hidden></p>
+        
+        <p class="ou">Ou escolha uma categoria abaixo:</p>
+        <div id="cartoes" class="cartoes"></div>
+      </div>
+
+      <div class="grade">
+        <article id="resultado"></article>
+        
+        <aside>
+          <h2>Outros materiais</h2>
+          <ul id="outros"></ul>
+          <p class="extra"><strong>Dica extra:</strong> antes de descartar, pense se você pode reutilizar ou doar.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="tela-sobre" class="tela texto" hidden>
+      <h1>Sobre o Recicla Fácil</h1>
+      
+      <h2>O problema</h2>
+      <p>Muita gente não sabe como separar e descartar corretamente papel, plástico, vidro, pilhas e eletrônicos. Resíduos descartados no lugar errado perdem a chance de ser reaproveitados e podem causar danos ao meio ambiente.</p>
+      
+      <h2>Para quem é</h2>
+      <p>Estudantes, professores e colaboradores da UNINASSAU.</p>
+      
+      <h2>Nosso objetivo</h2>
+      <p>Oferecer, em poucos cliques, a orientação correta de descarte, uma dica de reutilização e exemplos de pontos de coleta, ajudando a comunidade acadêmica a criar o hábito do descarte consciente.</p>
+      
+      <button type="button" data-ir="inicio" class="volta">Fazer uma consulta</button>
+    </section>
+
+    <section id="tela-dicas" class="tela texto" hidden>
+      <h1>Dicas rápidas de sustentabilidade</h1>
+      <div class="dicas-grade">
+        <div class="cartao">
+          <h2>♻️ Reduzir</h2>
+          <p>Evite descartáveis, leve sua garrafa e sua sacola e imprima somente o necessário.</p>
+        </div>
+        <div class="cartao">
+          <h2>🔁 Reutilizar</h2>
+          <p>Use o verso de folhas como rascunho, reaproveite potes e doe aparelhos que ainda funcionam.</p>
+        </div>
+        <div class="cartao">
+          <h2>🗂️ Separar</h2>
+          <p>Mantenha recicláveis limpos e secos, separados do lixo comum, e confira as regras de coleta da sua cidade.</p>
+        </div>
+      </div>
+      <button type="button" data-ir="inicio" class="volta">Fazer uma consulta</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="impacto">
+      <p><strong>Informação também transforma hábitos.</strong></p>
+      <p><span class="numero">2,2%</span> dos resíduos sólidos urbanos do Brasil eram reciclados, segundo o diagnóstico do Plano Nacional de Resíduos Sólidos (Planares), com dados até 2018.</p>
+      <p class="fonte">Fonte: <a href="https://sinir.gov.br/" target="_blank">SINIR / Ministério do Meio Ambiente</a>. Importante: é um dado nacional, não um resultado da UNINASSAU nem deste projeto.</p>
+    </div>
+    
+    <div class="rodape-base">
+      <strong>Recicla Fácil UNINASSAU</strong>
+      <span>Pequenas atitudes fazem grandes diferenças.</span>
+      <span>Juntos por uma faculdade mais sustentável.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
